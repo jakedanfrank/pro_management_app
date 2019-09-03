@@ -1,0 +1,15 @@
+<div class="ui card"> <%# --- CHECK THIS LATER ---- %>
+  <div class="content">
+    <p class="header">
+      <%= @board.name %>
+    </p>
+  </div>
+  <div class="extra content"> <%# ---- CHECK THIS LATER ---%>
+    <%= link_to "Edit", edit_board_path(@board) %>
+    <%= link_to "Delete Board", board_path, @board, method: :delete %>
+    <br />
+    <%= link_to "Back", boards_path %>
+  </div>
+</div>
+
+<h1>Find me in app/views/boards/show.html.erb</h1>

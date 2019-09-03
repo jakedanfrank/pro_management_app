@@ -1,0 +1,9 @@
+<h1>Click List to View</h1>
+<%= link_to 'Add List', new_board_list_path(@board) %>
+<ul>
+  <% @list.each do |list| %>
+    <li><%= link_to list.name, [@board, list] %></li>
+  <% end %>
+</ul>
+
+<h1>Find me in app/views/lists/index.html.erb</h1>

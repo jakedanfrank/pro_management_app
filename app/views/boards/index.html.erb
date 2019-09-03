@@ -1,0 +1,13 @@
+<h1 class="ui header">Boards</h1>
+
+<% @boards.each do |board| %>
+<h1><%= board.name %></h1>
+  <%= link_to "View Boards", board_path(board) %>    
+<% end %>
+  <br />
+  <%= link_to "Create Board", new_board_path %>
+
+
+
+
+
